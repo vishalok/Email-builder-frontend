@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.App {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.editor-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preview-panel {
+  flex: 2;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preview-panel h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-save {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-save:hover {
+  background-color: #0056b3;
+}
+
+.preview {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .editor-panel,
+  .preview-panel {
+    max-width: 100%;
+  }
+
+  .btn-save {
+    font-size: 14px;
+  }
+}
+
+/* Add these styles for the download button */
+
+.btn-download {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
+/* In your App.css or styles file */
+.ql-editor img {
+  max-width: 100%;
+  height: auto;
+}
+.btn-download {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-download:hover {
+  background-color: #45a049;
+}
