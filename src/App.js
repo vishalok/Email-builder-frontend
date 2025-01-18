@@ -8,7 +8,9 @@ function App() {
   const [layoutHtml, setLayoutHtml] = useState('');
   const [emailConfig, setEmailConfig] = useState({ title: '', content: '', imageUrl: '' });
   const [editorHtml, setEditorHtml] = useState(''); // content for ReactQuill
-  const proxy = 'http://localhost:5000';
+  const proxy = 'https://email-builder-backend.onrender.com'; // const proxy ='http://localhost:5000';
+
+
   // Fetch the layout from the backend
   useEffect(() => {
     axios.get(`${proxy}/getEmailLayout`)
